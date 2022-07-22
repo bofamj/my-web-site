@@ -3,7 +3,13 @@
     
 }
  
-
+hr { 
+    border-top: 3px solid #9CB4CC;
+     width: 50%;
+      margin: auto; 
+      margin-top: 5%; 
+      margin-bottom: 5%; 
+}
 /* button general style */
 .btn {
 	background:linear-gradient(to bottom, #d3cedf 5%, #9CB4CC 100%);
@@ -36,7 +42,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 .container-fluid{
-    padding:2% 15% 1% 15%;
+    padding:2% 15% 5% 15%;
 }
 
 
@@ -99,12 +105,57 @@
     font-size:1rem;
 }
 
+.social{
+    color: #748DA6;
+    padding-right:1.6rem;
+}
+.social:hover{
+    color:#a4bed8;
+}
 
+/* about me section */
+#about{
+    padding:5% 25% 5% 25%;
+    line-height: 2;
+}
+.about-hetder{
+    padding-bottom:2rem;
+}
+
+
+
+/* skills section */
+
+.skills_icons{
+    padding:5% 1%;
+    width:80%;
+    margin-left: 10%;
+    align-items: start;
+    
+}
+
+.skills_icons span{
+    padding-right: 2rem ;
+    padding-bottom: 1.5rem;
+    color:#465666 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.icons_skills {
+    display: block;
+    color:#465666 !important;
+}
 
 @media (max-width:1000px){
     .photo-continer{
         /* transform: rotate(0);
         position:static; */
         margin-top: 5% !important;
+    }
+    .title_body{
+        text-align: center;
+        
+    }
+    #about{
+        padding:5% 15% 5% 15%;
     }
 }
