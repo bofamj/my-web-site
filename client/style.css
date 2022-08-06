@@ -76,7 +76,6 @@ hr {
 .photo-continer{
     position: relative;
     background-color: #D3CEDF;
-    
    margin:2% 0 ;
    border-radius:10px;
 }
@@ -84,7 +83,6 @@ hr {
  
 .img{
     position: relative;
-   
     bottom:0;
 }
 .name{
@@ -154,6 +152,21 @@ hr {
     color:#465666 !important;
     padding:15px;
 }
+/* project */
+#project{
+    padding:5% 25% 5% 25%;
+    
+}
+.project-continer{
+align-items:center;
+margin-bottom: 15%;
+}
+
+/* .projects-img{
+    width:100%
+} */
+
+
 
 
 /* contact me */
