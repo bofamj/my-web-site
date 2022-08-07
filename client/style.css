@@ -154,17 +154,22 @@ hr {
 }
 /* project */
 #project{
-    padding:5% 25% 5% 25%;
+    padding:2% 15% 5% 15%;
     
+}
+.project-row{
+    margin-bottom: 10rem;
 }
 .project-continer{
 align-items:center;
 margin-bottom: 15%;
+padding:3rem 0;
 }
 
-/* .projects-img{
-    width:100%
-} */
+.projects-img{
+    
+    cursor: pointer;
+}
 
 
 
