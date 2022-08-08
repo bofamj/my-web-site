@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
     <title>MJ</title>
 </head>
@@ -27,7 +29,7 @@
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 
-                <a href="#title"  class="navbar-brand"><img src="../assets/logo-mj-removebg-preview.png" width="90px" alt="logo" class="logo-img"></a>
+                <a href="#title"  class="navbar-brand"><img src="assets/logo-mj-removebg-preview.png" width="90px" alt="logo" class="logo-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -60,7 +62,7 @@
                
                 
                 <div  class="col-lg-6  photo-continer mt-auto">
-                  <img src="../assets/my_photo.png" alt="iphone-mockup"  class="imgs  img-fluid">
+                  <img src="assets/my_photo.png" alt="iphone-mockup"  class="imgs  img-fluid">
                 </div>
             </div>
             
@@ -112,14 +114,14 @@
                 </div>
                 <div  class="col-lg-6   mt-auto">
                 <a href="https://www.linkedin.com/in/mustafamjaber/">
-                    <img src="../assets/rent-Project.png" alt="iphone-mockup"  class="imgs  img-fluid rounded-3 projects-img">
+                    <img src="assets/rent-Project.png" alt="iphone-mockup"  class="imgs  img-fluid rounded-3 projects-img">
                 </a>
                 </div>
 
             </div>
             <div class="row title_body align-items-center justify-content-between project-row">
                 <div  class="col-lg-6   mt-auto">
-                    <img src="../assets/rent-Project.png" alt="iphone-mockup"  class="imgs  img-fluid rounded-3">
+                    <img src="assets/rent-Project.png" alt="iphone-mockup"  class="imgs  img-fluid rounded-3">
                     </div>
                 <div class="col-lg-6 ">
                     <h1 class="name">rent</h1>
@@ -142,7 +144,7 @@
                     
                 </div>
                 <div  class="col-lg-6   mt-auto">
-                <img src="../assets/rent-Project.png" alt="iphone-mockup"  class="imgs  img-fluid rounded-3">
+                <img src="assets/rent-Project.png" alt="iphone-mockup"  class="imgs  img-fluid rounded-3">
                 </div>
             </div>
         </div>
@@ -154,15 +156,16 @@
         
             <div class="container-fluid  " id="contact_me">
                 <h1 class="name about-hetder"> Contact</h1>
-                <form class="was-validated">
+                <form class="was-validated"  action="/post" method="post">
                     <div class="mb-3  form-text">
                         <label for="exampleFormControlInput1" class="form-label">Email </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" >
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
                     </div>
                     <div class="mb-3 form-text">
                         <label for="exampleFormControlTextarea1" class="form-label"> Massege</label>
-                        <textarea class="form-control is-valid" id="exampleFormControlTextarea1" rows="5" ></textarea>
+                        <textarea class="form-control is-valid" id="exampleFormControlTextarea1" rows="5" name="massage"></textarea>
                     </div>
+                    <button type="submit" class="btn text-center mt-3"></i> send <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
             </div>
             <hr>
@@ -178,7 +181,7 @@
                             <i class="fa-brands fa-linkedin fa-2x"></i>
                         </a>
                         </div>
-                        <p>Copyright © 2022 <a href="#title"><img src="../assets/logo-mj-removebg-preview.png" width="90px" alt="logo" class="logo-img"></a> Mustafa MJ</p>
+                        <p>Copyright © 2022 <a href="#title"><img src="assets/logo-mj-removebg-preview.png" width="90px" alt="logo" class="logo-img"></a> Mustafa MJ</p>
                 </div>
             </footer>
 
