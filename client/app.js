@@ -1,4 +1,4 @@
-require("dotenv").config();
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -19,7 +19,17 @@ const mile = process.env.RECIPIENT;
 const user = process.env.GMAIL_USER;
 const OAuth2 = google.auth.OAuth2;
 
+
 //*nodemailer refresh token
+const Refresh_Token =
+  "1//04aA8QTWDCUB9CgYIARAAGAQSNwF-L9IrYxiCX7rbZE0MDRGiXVv4q3DDDOseElzciUWCMkZx4B0j7X_rBElHOpBJSERm0vLF5rA";
+
+//*declaring google oauth2
+const oauth2Client = new OAuth2(
+  "754540055745-dk295k74uv341ntkmfp7lk2llsu0d6pj.apps.googleusercontent.com",
+  "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",
+  "https://developers.google.com/oauthplayground"
+);
 
 
 //*oauth2 credentials
@@ -29,11 +39,29 @@ const accessToken = oauth2Client.getAccessToken();
 //*sending the main html page rout
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
+  console.log(id,secret,mile,user)
 });
+
+
+const data = {
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  auth: {
+    type: "OAuth2",
+    user:"enserali79@gmail.com" ,
+    clientId:id,
+    clientSecret: secret,
+    refreshToken: Refresh_Token,
+    accessToken: accessToken,
+  },
+}
 
 //*sending the email route
 app.post("/", (req, response) => {
   console.log(req.body.email, req.body.message);
+  /* console.log(data); */
+  
 
   const output = `
     <p>You have a new contact request</p>
@@ -41,24 +69,11 @@ app.post("/", (req, response) => {
     <h2>Email: ${req.body.email}</h2>
     <p>Message: ${req.body.message}</p>
     `;
-  const smtpTrans = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      type: "OAuth2",
-      user: ,
-      clientId:
-       
-      clientSecret: 
-      refreshToken: Refresh_Token,
-      accessToken: accessToken,
-    },
-  });
+  const smtpTrans = nodemailer.createTransport(data);
 
   const mailOpts = {
-    from: ,
-    to: ,
+    from:"enserali79@gmail.com" ,
+    to:"mustafamjaber@yahoo.com" ,
     subject: "New message from Nodemailer-contact-form",
     html: output,
   };
