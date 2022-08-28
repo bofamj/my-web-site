@@ -24,7 +24,7 @@
 <body>
 
     <!-- main tile -->
-    <main class="main ">
+    <main data-bs-spy="scroll" class="main ">
         <div class="container-fluid " id="title">
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -48,6 +48,16 @@
                 </div>
             </nav>
 
+            <!-- scroll up button -->
+            <button
+            type="button"
+            class="btn  btn-floating btn-lg"
+            id="btn-back-to-top"
+            >
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+
             <!-- title body -->
             <div class="row title_body align-items-center justify-content-between ">
                 <div class="col-lg-6 ">
@@ -70,7 +80,7 @@
         <hr>
 
        <!--  about me section -->
-       <div class="container-fluid  text-center " id="about">
+       <div  class="container-fluid  text-center sec" id="about">
             <h1 class="name about-hetder about-me">About Me</h1>
             <p class="introduction-body about-mee"> I'm a Front-End Developer .
                 I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences, I love spending time on fixing little details and optimizing,Also I like working in a team, you'll learn faster and much more.
@@ -82,7 +92,7 @@
 
         <!-- skills section -->
 
-        <div class="container-fluid d-flex   text-center " id="skils">
+        <div  class="container-fluid d-flex   text-center sec" id="skils">
             <h1 class="name about-hetder section-skills">Skills</h1>
             <div class="skills_icons d-flex  justify-content-around flex-wrap skills-icons">
                 <span><i class="fa-brands fa-html5 fa-4x icons_skills"></i>HTML 5</span>
@@ -100,7 +110,7 @@
 
 
         <!-- projects -->
-        <div class="container-fluid" id="project">
+        <div  class="container-fluid  sec" id="project">
             <h1 class="name about-hetder text-center pb-5 section-project">Project</h1>
             <div class="row title_body align-items-center justify-content-between project-row ">
                 <div class="col-lg-6 project-1-desc">
@@ -155,7 +165,7 @@
 
         <!-- contact me -->
         
-            <div class="container-fluid  " id="contact_me">
+            <div  class="container-fluid  sec" id="contact_me">
                 <h1 class="name about-hetder section-contact"> Contact</h1>
                 <form class="was-validated"  action="/" method="post">
                     <div class="mb-3  form-text email">
