@@ -1,10 +1,10 @@
 //* navbar inmation */
 gsap.from(".nav-text", {
   duration: 2,
-  x: -100,
+  y: -95,
   ease: "bounce.out",
 });
-gsap.from("#title", { duration: 2, y: -100, ease: "bounce.out" });
+/* gsap.from("#title", { duration: 2, y: -100, ease: "bounce.out" }); */
 
 //* hero image */
 gsap.from(".image", { duration: 2, x: 1000, ease: "back.out(1.7)" });
